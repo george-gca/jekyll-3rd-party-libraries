@@ -1,5 +1,7 @@
 # jekyll-3rd-party-libraries
 
+[![Gem Version](https://badge.fury.io/rb/jekyll-3rd-party-libraries.svg)](http://badge.fury.io/rb/jekyll-3rd-party-libraries)
+
 A better way to handle 3rd party css and js libraries in Jekyll.
 
 Whenever you are creating your site, you might want to use some 3rd party libraries like Bootstrap, jQuery, etc. You can download them and put them in your assets folder, but it is usually recommended to use them via [CDNs](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/). This plugin allows you to use CDNs for your 3rd party libraries and also provides a way to use them offline.
