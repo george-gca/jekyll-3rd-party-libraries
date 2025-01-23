@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
     "source_code_uri" => "https://github.com/george-gca/jekyll-3rd-party-libraries",
     "bug_tracker_uri" => "https://github.com/george-gca/jekyll-3rd-party-libraries/issues",
     "changelog_uri"   => "https://github.com/george-gca/jekyll-3rd-party-libraries/releases",
-    "homepage_uri"    => s.homepage,
+    # "homepage_uri"    => s.homepage,
   }
 
   all_files     = `git ls-files -z`.split("\x0")
@@ -25,6 +25,6 @@ Gem::Specification.new do |s|
   s.required_ruby_version = ">= 2.3.0"
 
   s.add_dependency "jekyll", ">= 3.6", "< 5.0"
-  s.add_dependency "css_parser"
-  s.add_dependency "nokogiri"
+  s.add_dependency "css_parser", ">= 1.6", "< 2.0"
+  s.add_dependency "nokogiri", ">= 1.8", "< 2.0"
 end
