@@ -359,3 +359,20 @@ Downloading https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/images/marker-shadow
 Downloading https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js to /home/george-gca/my-site/assets/libs/leaflet/leaflet.min.js
 Downloading https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js.map to /home/george-gca/my-site/assets/libs/leaflet/leaflet.js.map
 ```
+
+## Building and Releasing a New Version
+
+To build and release a new gem version:
+
+1. **Build the gem** - This creates a `.gem` file from the current gemspec:
+   ```bash
+   gem build jekyll-3rd-party-libraries.gemspec
+   ```
+
+2. **Push to RubyGems** - This publishes the gem to [RubyGems.org](https://rubygems.org/), making it available for installation:
+   ```bash
+   gem push jekyll-3rd-party-libraries-X.X.X.gem
+   ```
+   Replace `X.X.X` with the actual version number (e.g., `jekyll-3rd-party-libraries-0.0.6.gem`).
+
+The version number should be updated in [lib/jekyll-3rd-party-libraries/version.rb](lib/jekyll-3rd-party-libraries/version.rb) before building.
