@@ -25,6 +25,6 @@ Gem::Specification.new do |s|
   s.required_ruby_version = ">= 2.3.0"
 
   s.add_dependency "jekyll", ">= 3.6", "< 5.0"
-  s.add_dependency "css_parser", ">= 1.6", "< 2.0"
+  s.add_dependency "css_parser", ">= 1.6", "< 4.0"
   s.add_dependency "nokogiri", ">= 1.8", "< 2.0"
 end
